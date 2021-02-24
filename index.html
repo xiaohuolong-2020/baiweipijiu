@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="no-cache" http-equiv="Cache-Control" />
+<meta charset="utf-8">
+<title>Bud Light 百威昕蓝</title>
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="telephone=no" name="format-detection" />
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript">
+if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+    var version = parseFloat(RegExp.$1);
+    if(version>2.3){
+        var phoneScale = parseInt(window.screen.width)/750;
+        document.write('<meta name="viewport" content="width=750, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+    }else{
+        document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+    }
+}else{
+    document.write('<meta name="viewport"content="width=750, user-scalable=no, target-densitydpi=device-dpi,minimal-ui">');
+}
+</script>
+</head>
+<body>
+<!--横屏提示-->
+<div id="lock" class="lock_wrp hide">
+    <div class="lock">
+        <i></i><br>
+        为了更好的体验，请使用竖屏浏览
+    </div>
+</div>
+<!--loading-->
+<div id="loading" class="loading_bg">
+    <div class="loading_wrp">
+        <div class="loading">
+            <img src="images/load.gif"/>
+        </div>
+        <b id="loading_text">0%</b>
+    </div>
+</div>
+<div class="main">
+    <img src="images/top_img.jpg" alt="" class="top_img"/>
+    <img src="images/logo.png" alt="" class="logo"/>
+    <a href="javascript:;" class="btn_yuyue scale"><img src="images/slogan_before.png"/></a>
+    <img src="images/slogan_live.png" class="slogan_live" />
+    <img src="images/slogan_after.png" class="slogan_after" />
+    <img src="images/hand.png" class="hand scale2" />
+    <div class="page_video">
+        <!--直播前-->
+        <img src="images/comingSoon.jpg" alt="" class="live_before"/>
+        <!--直播中-->
+        <div class="video_live dis_non" id="video_live"></div>
+        <!--点播-->
+        <div class="video_player dis_non" id="video_player"></div>
+    </div>
+    <!-- 视频缩略图 -->
+    <div class="video_thumb">
+        <ul>
+            <!-- 直播前 -->
+            <li class="li1">
+                <a href="javascript:;"><i></i><img src="images/video_thumb01.jpg" class="comingSoon_thumb" /><img src="images/comingSoon_txt.png" class="comingSoon_txt"></a>
+                <p>百威昕蓝新品发布会直播</p>
+            </li>
+            <!-- 直播中 -->
+            <li class="li2 hide">
+                <a href="javascript:;" livevid="1551478202"><i></i><img src="images/video_thumb01.jpg"/><img src="images/icon_play.png" class="icon_play" /></a>
+                <p>百威昕蓝新品发布会直播</p>
+            </li>
+            <!-- 直播后 -->
+            <li class="li3 hide">
+                <a href="javascript:;" vid="k32155sqz9c" posterImg="http://test.spirakon.com:8000/2020-07/baiwei_live/images/video_img01.jpg"><i></i><img src="images/video_thumb01.jpg"/><img src="images/icon_play.png" class="icon_play" /></a>
+                <p>百威昕蓝新品发布会直播</p>
+            </li>
+            <li class="li4">
+                <a href="javascript:;" vid="k3215t80mbe" posterImg="http://test.spirakon.com:8000/2020-07/baiwei_live/images/video_img02.jpg"><i></i><img src="images/video_thumb02.jpg"/><img src="images/icon_play.png" class="icon_play" /></a>
+                <p>熬鹰巴士百威昕蓝联合呈现</p>
+            </li>
+            <li class="li5">
+                <a href="javascript:;" vid="l3215fh637v" posterImg="http://test.spirakon.com:8000/2020-07/baiwei_live/images/video_img03.jpg"><i></i><img src="images/video_thumb03.jpg"/><img src="images/icon_play.png" class="icon_play" /></a>
+                <p>《熬鹰巴士》活动规则</p>
+            </li>
+        </ul>
+    </div>
+    <a href="https://www.bud.cn/mobile/2020budlight.html" class="banner"><img src="images/banner.png" alt=""/></a>
+    <img src="images/lunbo_bg.png" alt="" class="lunbo_bg"/>
+	<!-- 图片轮播 -->
+    <div class="page_lunbo">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/lunbo_img01.png"/></div>
+                <div class="swiper-slide"><img src="images/lunbo_img02.png"/></div>
+                <div class="swiper-slide"><img src="images/lunbo_img03.png"/></div>
+            </div>
+            <div class="swiper-button-next btn_next"></div>
+            <div class="swiper-button-prev btn_prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <img src="images/tip.png" alt="" class="tip"/>
+    <img src="images/copyright.png" alt="" class="copyright"/>
+</div>
+<!-- wap背景 -->
+<div class="wap_bg">
+    <img src="images/bg_01.jpg"/>
+    <img src="images/bg_02.jpg"/>
+    <img src="images/bg_03.jpg"/>
+</div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/imagesloaded.js"></script>
+<script type="text/javascript" src="//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js"></script>
+<script type="text/javascript" src="//vm.gtimg.cn/tencentvideo/txvlive/2017/txvlive.js"></script>
+<script src="//appmedia.qq.com/media/631007208/appin/h5e.2.0.8.js" id='h5e-node' arg='{"tamsid":"641012842", "track": true}'></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/qqnews.js"></script>
+<script type="text/javascript">
+$(function(){   
+    //loading列表
+    var basePath = "images/"
+    var loader = new window.PxLoader();
+    //声明资源文件列表
+    var fileList = ['load.gif','bg_01.jpg','bg_02.jpg','bg_03.jpg'];
+    
+    for (var i = 0; i < fileList.length; i++) {
+        loader.addImage(basePath + fileList[i]);
+    }
+    loader.addProgressListener(function (e) {
+        var percent = Math.round((e.completedCount / e.totalCount) * 100);
+        $("#loading_text").html(percent+"%");
+    });
+    loader.addCompletionListener(function () {
+        $("#loading").remove();
+    });
+    loader.start();
+});
+</script>
+</body>
+</html>
